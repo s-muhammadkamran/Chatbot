@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../../Practices/styles/styles.css" />
+    <script src="../../Practices/script/script.js"></script>
+</head>
+<body>
+    <h1 class="title">Simple Calculator</h1>
+    <form onsubmit="calculate(); return false;">
+        Number 1: <input type="number" id="num1" title="Number 1" /> 
+        <br/>
+        Number 2: <input type="number" id="num2" title="Number 2" /> 
+        <br/>    
+        Operation: <select name="operations" id="operation" title="Operations"> 
+            <option value="select" class="opt">Select an operation</option>
+            <option value="add" class="opt">+</option>
+            <option value="sub" class="opt">-</option>
+            <option value="mul" class="opt">x</option>
+            <option value="div" class="opt">÷</option>
+        </select>
+        <br/>
+        <button type="submit" class="calc">Calculate</button> 
+        <button type="reset" class="reset">Reset</button>
+        <br/><br/>        
+        <input type="text" id="result" title="Result" />
+    </form>            
+</body>
+</html>

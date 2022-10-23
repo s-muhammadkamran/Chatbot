@@ -10,12 +10,12 @@
     </head>
     <body>        
         <form id="frmMoneyBox" onsubmit="checkPinAndWithdraw(); return false">        
+            <div class="row">        
+                <div class="blankColumn"></div>
+                <h1 class="title">MoneyBox</h1>
+            </div>                          
             <div class="container">                        
-                <div class="left">
-                    <div class="row">        
-                        <label class="label"></label>
-                        <h1 class="title">MoneyBox</h1>
-                    </div>                          
+                <div class="left">                   
                     <div class="row">
                         <label id="lblAccNo" for="txtAccNo" class="label">Enter Account Number: </label>
                         <input type="text" id="txtAccNo" class="formControl" required />
@@ -29,19 +29,12 @@
                         <input type="number" id="txtAmount" class="formControl" required min="500" />
                     </div>
                     <div class="row">
-                        <label class="label"></label>
-                        <button type="submit" class="btnSubmit">Withdraw</button>
-                        <button type="reset" class="btnReset">Clear All</button>
-                    </div>       
-                    <div>                
-                        <span id="txtBalanceBefore" class="result"></span>
-                    </div>
-                    <div>                
-                        <span id="txtResult" class="result"></span>
-                    </div>
-                    <div>                
-                        <span id="txtBalanceAfter" class="result"></span>
-                    </div>
+                        <div class="blankColumn"></div>
+                        <div class="actions">
+                            <button type="submit" class="btnSubmit">Withdraw</button>
+                            <button type="reset" class="btnReset">Clear All</button>
+                        </div>
+                    </div>                    
                 </div>
                 <div class="right">
                     <table class="testData">
@@ -71,8 +64,19 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>                        
+                </div>                                       
             </div>
+            <div class="bottom">
+                <div>                
+                    <span id="txtBalanceBefore" class="result"></span>
+                </div>
+                <div>                
+                    <span id="txtResult" class="result"></span>
+                </div>
+                <div>                
+                    <span id="txtBalanceAfter" class="result"></span>
+                </div>
+            </div> 
         </form>    
     </body>
 </html>

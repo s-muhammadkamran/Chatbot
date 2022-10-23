@@ -1,7 +1,12 @@
 .container {
     width: 90%;
     display:flex;
+    margin: 10px;
     flex-wrap: wrap;
+}
+
+.title {
+    padding-left: 20px;
 }
 
 thead {
@@ -10,19 +15,18 @@ thead {
     text-align: left;
 }
 
-.left, .right {
+.left, .right, .bottom {
     padding-right:30px;
-}
-
-.testData {
-    margin-top:80px;
-    margin-left: 80px;
 }
 
 .row {
     width:100%;
     display:flex;
     flex-wrap: wrap;
+}
+
+.blankColumn {
+    width: 150px;
 }
 
 .label {
@@ -39,15 +43,19 @@ thead {
     margin: 5px;
 }
 
+.actions {
+    margin: 5px;
+}
+
 .btnSubmit {    
-    padding: 5px;
-    margin:5px;
+    padding: 10px;
+    margin:5px 5px 5px 5px;
     width: 100px;    
 }
 
 .btnReset {    
-    padding: 5px;
-    margin:5px;
+    padding: 10px;
+    margin:5px 5px 5px 5px;
     width: 100px;
 }
 

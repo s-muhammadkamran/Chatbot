@@ -1,10 +1,10 @@
 let moneyBox = 50000; // atm machine money box
 let ACC_AND_BALANCES = {
-    "ABCDE": {"PIN": "1234", "CardDailyLimit": 20000, "AccountBalance": 40000},
-    "FGHIJ": {"PIN": "1234", "CardDailyLimit": 20000, "AccountBalance": 50000},
-    "KLMNO": {"PIN": "1234", "CardDailyLimit": 20000, "AccountBalance": 80000},
-    "PQRST": {"PIN": "1234", "CardDailyLimit": 20000, "AccountBalance": 10000},
-    "UVWXY": {"PIN": "1234", "CardDailyLimit": 20000, "AccountBalance": 15000}
+    "ABC-DE-123"  :  {"PIN": "1234", "CardDailyLimit": 20000, "AccountBalance": 40000},
+    "FGH-IJ-987"  :  {"PIN": "4568", "CardDailyLimit": 20000, "AccountBalance": 50000},
+    "KLM-NO-432"  :  {"PIN": "7777", "CardDailyLimit": 20000, "AccountBalance": 80000},
+    "PQR-ST-001"  :  {"PIN": "0124", "CardDailyLimit": 20000, "AccountBalance": 10000},
+    "UVW-XYZ-004" :  {"PIN": "9998", "CardDailyLimit": 20000, "AccountBalance": 15000}
 };
 
 function checkPinAndWithdraw() {    
@@ -40,7 +40,7 @@ function checkPinAndWithdraw() {
             result = "Amount must be multiple of 500.";
         }
         else if (moneyBox < inputAmount) {
-            result = "System is unable to disburse required amount.";
+            result = "Machine is currently out of service.";
         }
         else if ((inputAccData["CardDailyLimit"] - inputAmount) < 0) {            
             result = "Daily withdrawal limit exceeded.";

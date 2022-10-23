@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyBox</title>    
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/script.js"></script>
+</head>
+<body>
+    
+    <form id="frmMoneyBox" onsubmit="checkPinAndWithdraw(); return false">
+        <div class="container">            
+            <div class="row">
+                <label class="label"></label>
+                <h1 class="title">ATM Machine</h1>
+            </div>
+            <div class="row">
+                <label id="lblPin" for="txtPin" class="label">Enter Pin: </label>
+                <input type="number" id="txtPin" class="formControl" required />
+            </div>
+            <div class="row">                
+                <label id="lblPin" for="txtAmount" class="label">Amount to Withdraw (Multiples of 500): </label>
+                <input type="number" id="txtAmount" class="formControl" required min="500" />
+            </div>
+            <div class="row">
+                <label class="label"></label>
+                <button type="submit" class="btnSubmit">Withdraw</button>
+                <button type="reset" class="btnReset">Clear All</button>
+            </div>       
+            <div class="row">
+                <label class="label"></label>
+                <input type="text" id="txtResult" class="result" />
+            </div>
+        </div>
+    </form>    
+</body>
+</html>

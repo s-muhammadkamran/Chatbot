@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MoneyBox</title>    
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <script src="./scripts/script2.js"></script>
+    </head>
+    <body>        
+        <form id="frmMoneyBox" onsubmit="checkPinAndWithdraw(); return false">        
+            <div class="container">                        
+                <div class="left">
+                    <div class="row">        
+                        <label class="label"></label>
+                        <h1 class="title">MoneyBox</h1>
+                    </div>                          
+                    <div class="row">
+                        <label id="lblAccNo" for="txtAccNo" class="label">Enter Account Number: </label>
+                        <input type="text" id="txtAccNo" class="formControl" required />
+                    </div>
+                    <div class="row">
+                        <label id="lblPin" for="txtPin" class="label">Enter Pin: </label>
+                        <input type="number" id="txtPin" class="formControl" required />
+                    </div>
+                    <div class="row">                
+                        <label id="lblPin" for="txtAmount" class="label">Amount to Withdraw (Multiples of 500): </label>
+                        <input type="number" id="txtAmount" class="formControl" required min="500" />
+                    </div>
+                    <div class="row">
+                        <label class="label"></label>
+                        <button type="submit" class="btnSubmit">Withdraw</button>
+                        <button type="reset" class="btnReset">Clear All</button>
+                    </div>       
+                    <div>                
+                        <span id="txtBalanceBefore" class="result"></span>
+                    </div>
+                    <div>                
+                        <span id="txtResult" class="result"></span>
+                    </div>
+                    <div>                
+                        <span id="txtBalanceAfter" class="result"></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <table class="testData">
+                        <thead>
+                            <tr><th>Starting Test Acc Data</th></tr>
+                            <tr>
+                                <th>ACC#</th>
+                                <th>PIN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </th>
+                            <tr>
+                                <td>ABCDE</td><td>1234</td>
+                            </tr>
+                            <tr>
+                                <td>FGHIJ</td><td>1234</td>
+                            </tr>
+                            <tr>
+                                <td>KLMNO</td><td>1234</td>
+                            </tr>
+                            <tr>
+                                <td>PQRST</td><td>1234</td>
+                            </tr>
+                            <tr>
+                                <td>UVWXY</td><td>1234</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                        
+            </div>
+        </form>    
+    </body>
+</html>
